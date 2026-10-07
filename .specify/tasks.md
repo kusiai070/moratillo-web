@@ -4,7 +4,7 @@
 - [x] Tarea 1.1: Inicializar repositorio Git y estructura de carpetas en El Laboratorio (`moratillo-web`).
 - [x] Tarea 1.2: Copiar e integrar los 26 archivos de obras reales a `public/obras/`.
 - [x] Tarea 1.3: Redactar especificaciones (`specify.md`), arquitectura (`plan.md`) y libro de tareas (`tasks.md`).
-- [ ] Tarea 1.4: Conectar con repositorio remoto de GitHub (a cargo de Julio).
+- [x] Tarea 1.4: Conectar con repositorio remoto de GitHub (Completado: https://github.com/kusiai070/moratillo-web).
 
 ## Fase 2: Boceto Visual y Maqueta Interactiva (El Entregable Inicial)
 - [ ] Tarea 2.1: Disenar prototipo visual interactivo de la portada y tienda de prints (con `generative_ui` para revision con Julio).
