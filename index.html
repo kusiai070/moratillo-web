@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan Moratillo | Arquitectura & Arte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FBFBF9;
+      color: #18181B;
+    }
+    .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .paper-texture {
+      background-color: #FBFBF9;
+      background-image: radial-gradient(#E2E0D8 0.75px, transparent 0.75px);
+      background-size: 24px 24px;
+    }
+    .border-subtle {
+      border-color: rgba(24, 24, 27, 0.08);
+    }
+  </style>
+</head>
+<body class="paper-texture antialiased selection:bg-stone-200">
+
+  <!-- BARRA DE AVISO SUPERIOR (ENVIOS INTERNACIONALES) -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2.5 px-6 text-center tracking-widest uppercase font-medium">
+    <span>Estudio & Taller · Lima / Berlin</span>
+    <span class="mx-3 opacity-30">|</span>
+    <span>Envios de Arte Asegurados a Todo el Mundo via DHL Express</span>
+    <span class="mx-3 opacity-30">|</span>
+    <span class="text-amber-300 font-semibold">Giclee Museum-Grade</span>
+  </div>
+
+  <!-- NAVEGACION PRINCIPAL EDITORIAL -->
+  <header class="sticky top-0 z-50 bg-[#FBFBF9]/90 backdrop-blur-md border-b border-subtle">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- LOGO / FIRMA -->
+      <a href="#hero" class="flex flex-col">
+        <span class="text-2xl font-serif font-bold tracking-tight text-stone-900">IVAN MORATILLO</span>
+        <span class="text-[10px] tracking-[0.25em] uppercase text-stone-500 -mt-1 font-semibold">Arquitectura & Arte</span>
+      </a>
+
+      <!-- MENU -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.18em] font-medium text-stone-700">
+        <a href="#manifiesto" class="hover:text-stone-950 transition-colors">Manifiesto</a>
+        <a href="#originales" class="hover:text-stone-950 transition-colors">Obras Originales</a>
+        <a href="#tienda-prints" class="hover:text-stone-950 transition-colors text-amber-900 font-bold">Giclee Prints</a>
+        <a href="#arquitectura" class="hover:text-stone-950 transition-colors">Arquitectura</a>
+        <a href="#contacto" class="hover:text-stone-950 transition-colors">Contacto</a>
+      </nav>
+
+      <!-- ACCIONES: DIVISA + WHATSAPP -->
+      <div class="flex items-center space-x-4">
+        <div class="flex border border-stone-300 rounded-full text-xs font-semibold overflow-hidden p-0.5 bg-stone-100">
+          <button id="btn-usd" onclick="setCurrency('USD')" class="px-2.5 py-1 rounded-full bg-stone-900 text-white transition-all">USD</button>
+          <button id="btn-eur" onclick="setCurrency('EUR')" class="px-2.5 py-1 rounded-full text-stone-600 transition-all">EUR</button>
+        </div>
+        <a href="https://wa.me/51962326081?text=Hola%20Ivan,%20deseo%20consultar%20sobre%20tus%20obras%20de%20arte" target="_blank" class="hidden sm:inline-flex items-center space-x-2 text-xs uppercase tracking-wider px-4 py-2 rounded-full border border-stone-800 text-stone-900 font-medium hover:bg-stone-900 hover:text-white transition-all">
+          <span>WhatsApp Directo</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="py-16 md:py-28 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <!-- COLUMNA TEXTO -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-block text-[11px] uppercase tracking-[0.3em] font-bold text-amber-900 border-b border-amber-900/30 pb-1">
+          Coleccion 2002 – 2026 · Lima & Berlin
+        </div>
+        <h1 class="text-5xl md:text-6xl xl:text-7xl font-serif font-medium leading-[1.05] tracking-tight text-stone-950">
+          La Geometria <br>de lo Invisible
+        </h1>
+        <p class="text-stone-600 text-base md:text-lg leading-relaxed font-light max-w-xl">
+          El rigor del calculo espacial y la libertad del mito. Ivan Moratillo concibe el dibujo no como representacion, sino como una estructura viva donde la disciplina arquitectonica engendra megalopolis visionarias, ciudadelas concentricas y seres quimericos.
+        </p>
+        
+        <div class="pt-4 flex flex-col sm:flex-row gap-4">
+          <a href="#tienda-prints" class="inline-flex justify-center items-center px-8 py-4 rounded-full bg-stone-950 text-stone-50 text-xs uppercase tracking-[0.2em] font-semibold hover:bg-stone-800 transition-all shadow-md">
+            Ver Giclee Prints Disponibles
+          </a>
+          <a href="#originales" class="inline-flex justify-center items-center px-8 py-4 rounded-full border border-stone-300 text-stone-800 text-xs uppercase tracking-[0.2em] font-semibold hover:border-stone-900 transition-all">
+            Catalogo de Obras Unicas
+          </a>
+        </div>
+
+        <div class="pt-8 border-t border-subtle grid grid-cols-3 gap-6 text-left">
+          <div>
+            <div class="font-serif text-2xl font-bold text-stone-900">+20 Anos</div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">De Trayectoria Grafica</div>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-bold text-stone-900">100% Algodon</div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">Papel de Archivo Fine Art</div>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-bold text-stone-900">Global</div>
+            <div class="text-[11px] uppercase tracking-wider text-stone-500 font-medium">Envios Lima & Berlin</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMNA IMAGEN HERO (MEGALOPOLIS) -->
+      <div class="lg:col-span-6">
+        <div class="relative bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-stone-200">
+          <div class="overflow-hidden rounded-xl bg-stone-100 aspect-[4/3] max-h-[560px] flex items-center justify-center">
+            <img src="public/obras_destacadas/obra_megalopolis.jpg" alt="Megalopolis Suspendida - Ivan Moratillo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="mt-4 flex justify-between items-baseline text-xs">
+            <div>
+              <p class="font-serif italic font-bold text-base text-stone-900">Megalopolis Suspendida</p>
+              <p class="text-stone-500 font-light">Tinta y plumilla sobre papel de archivo · Serie Utopias</p>
+            </div>
+            <span class="text-[11px] tracking-wider uppercase font-semibold text-stone-700 border border-stone-200 px-2.5 py-1 rounded-full">
+              Edicion Giclee
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCION MANIFIESTO CONCEPTUAL -->
+  <section id="manifiesto" class="py-20 bg-[#F4F3EE] border-y border-subtle">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="text-[11px] uppercase tracking-[0.3em] font-bold text-stone-500">El Manifiesto de Autor</span>
+      <h2 class="text-3xl md:text-5xl font-serif text-stone-950 font-normal leading-snug">
+        "No concibo el arte como un escape de la arquitectura, sino como su expansion mas pura: donde la gravedad cede el paso a la imaginacion."
+      </h2>
+      <div class="w-16 h-px bg-stone-400 mx-auto my-6"></div>
+      <p class="text-stone-700 font-light leading-relaxed text-base md:text-lg text-justify md:text-center">
+        Arquitecto de formacion y dibujante de ciudadelas visionarias, Ivan Moratillo ha consolidado un lenguaje grafico unico en el panorama contemporaneo. Sus piezas entrelazan la precision del plano axonometrico y la densidad del grabado clasico con una mitologia propia. Sus obras residen en colecciones privadas de Peru, Alemania y Espana, explorando la memoria urbana, la distopia tecnologica y la arqueologia del futuro.
+      </p>
+      <div class="pt-4">
+        <span class="font-serif text-xl italic text-stone-900 font-semibold">Ivan Moratillo</span>
+        <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Arquitecto & Artista Visual</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION OBRAS ORIGINALES (PIEZAS UNICAS) -->
+  <section id="originales" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 border-b border-subtle pb-6">
+      <div>
+        <span class="text-[11px] uppercase tracking-[0.25em] font-bold text-amber-900">Catalogo de Coleccionista</span>
+        <h2 class="text-4xl md:text-5xl font-serif text-stone-950 font-medium mt-1">Obras Originales</h2>
+      </div>
+      <p class="text-stone-500 text-xs uppercase tracking-widest mt-4 md:mt-0 font-medium">
+        Piezas unicas firmadas a mano con Certificado de Autenticidad
+      </p>
+    </div>
+
+    <!-- GRID DE 3 OBRAS ORIGINALES -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- OBRA 1: CIUDADELA 2002 -->
+      <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="aspect-[3/4] overflow-hidden rounded-xl bg-stone-50 mb-5">
+            <img src="public/obras_destacadas/obra_ciudadela_2002.jpg" alt="Ciudadela Concentrica 2002" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-serif text-2xl font-bold text-stone-900">Ciudadela Concentrica</h3>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-900">Original (2002)</span>
+          </div>
+          <p class="text-xs text-stone-500 mt-1 font-light">Tinta y aguadas de acuarela sobre papel de grabado</p>
+          <p class="text-xs text-stone-600 mt-2 font-medium">Dimensiones: 50 × 70 cm · Pieza Unica Firmada</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500 uppercase tracking-wider font-semibold">Consultar con el Autor</span>
+          <a href="https://wa.me/51962326081?text=Hola%20Ivan,%20deseo%20cotizar%20la%20obra%20original%20'Ciudadela%20Concentrica%20(2002)'" target="_blank" class="px-4 py-2 rounded-full bg-stone-900 text-white text-xs uppercase tracking-wider font-medium hover:bg-stone-800 transition-colors">
+            Cotizar Obra
+          </a>
+        </div>
+      </div>
+
+      <!-- OBRA 2: JINETE MITOLOGICO -->
+      <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="aspect-[3/4] overflow-hidden rounded-xl bg-stone-50 mb-5">
+            <img src="public/obras_destacadas/obra_jinete.jpg" alt="El Jinete del Enjambre" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-serif text-2xl font-bold text-stone-900">El Jinete del Enjambre</h3>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-stone-100 text-stone-800">Original</span>
+          </div>
+          <p class="text-xs text-stone-500 mt-1 font-light">Plumilla de alta precision y tinta ferrogálica</p>
+          <p class="text-xs text-stone-600 mt-2 font-medium">Dimensiones: 65 × 90 cm · Papel Algodon</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500 uppercase tracking-wider font-semibold">Consultar con el Autor</span>
+          <a href="https://wa.me/51962326081?text=Hola%20Ivan,%20deseo%20cotizar%20la%20obra%20original%20'El%20Jinete%20del%20Enjambre'" target="_blank" class="px-4 py-2 rounded-full bg-stone-900 text-white text-xs uppercase tracking-wider font-medium hover:bg-stone-800 transition-colors">
+            Cotizar Obra
+          </a>
+        </div>
+      </div>
+
+      <!-- OBRA 3: FIGURA SURREALISTA PASTEL -->
+      <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="aspect-[3/4] overflow-hidden rounded-xl bg-stone-50 mb-5">
+            <img src="public/obras_destacadas/obra_figura_pastel.jpg" alt="Vigilia Arquitectonica" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-serif text-2xl font-bold text-stone-900">Vigilia en el Umbral</h3>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-900">Original</span>
+          </div>
+          <p class="text-xs text-stone-500 mt-1 font-light">Lapiz de color y pasteles sobre papel texturado</p>
+          <p class="text-xs text-stone-600 mt-2 font-medium">Dimensiones: 45 × 60 cm · Pieza Unica</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500 uppercase tracking-wider font-semibold">Consultar con el Autor</span>
+          <a href="https://wa.me/51962326081?text=Hola%20Ivan,%20deseo%20cotizar%20la%20obra%20original%20'Vigilia%20en%20el%20Umbral'" target="_blank" class="px-4 py-2 rounded-full bg-stone-900 text-white text-xs uppercase tracking-wider font-medium hover:bg-stone-800 transition-colors">
+            Cotizar Obra
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCION TIENDA GICLEE PRINTS (SELECTOR INTERACTIVO) -->
+  <section id="tienda-prints" class="py-24 bg-stone-900 text-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-[11px] uppercase tracking-[0.3em] font-bold text-amber-400">Ediciones de Archivo Firmadas</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-medium text-white">Giclee Fine Art Prints</h2>
+        <p class="text-stone-400 font-light text-sm md:text-base leading-relaxed">
+          Impresiones de grado museo sobre papel 100% algodon Hahnemuhle (310g) con tintas minerales pigmentadas. Garantia de longevidad de mas de 100 anos. Cada print se entrega numerado, timbrado y con Certificado de Autenticidad foliado firmado a mano por Ivan Moratillo.
+        </p>
+      </div>
+
+      <!-- ESTUDIO INTERACTIVO DE COMPRA (ESTILO LUIS THE ABSTRACT ARTIST) -->
+      <div class="bg-stone-950 border border-stone-800 rounded-3xl p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- VISOR DE LA OBRA SELECCIONADA -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="relative bg-stone-900 p-4 rounded-2xl border border-stone-800 overflow-hidden aspect-[4/3] flex items-center justify-center">
+            <img id="print-preview-img" src="public/obras_destacadas/obra_megalopolis.jpg" alt="Obra seleccionada" class="w-full h-full object-contain rounded-lg">
+          </div>
+          <div class="flex space-x-3 overflow-x-auto pb-2">
+            <button onclick="selectPrintWork('megalopolis', 'Megalopolis Suspendida', 'public/obras_destacadas/obra_megalopolis.jpg')" class="thumb-btn border-2 border-amber-400 rounded-lg p-1 bg-stone-900 flex-shrink-0">
+              <img src="public/obras_destacadas/obra_megalopolis.jpg" class="w-16 h-12 object-cover rounded">
+            </button>
+            <button onclick="selectPrintWork('ciudadela', 'Ciudadela Concentrica (2002)', 'public/obras_destacadas/obra_ciudadela_2002.jpg')" class="thumb-btn border border-stone-700 hover:border-amber-400 rounded-lg p-1 bg-stone-900 flex-shrink-0">
+              <img src="public/obras_destacadas/obra_ciudadela_2002.jpg" class="w-16 h-12 object-cover rounded">
+            </button>
+            <button onclick="selectPrintWork('jinete', 'El Jinete del Enjambre', 'public/obras_destacadas/obra_jinete.jpg')" class="thumb-btn border border-stone-700 hover:border-amber-400 rounded-lg p-1 bg-stone-900 flex-shrink-0">
+              <img src="public/obras_destacadas/obra_jinete.jpg" class="w-16 h-12 object-cover rounded">
+            </button>
+          </div>
+        </div>
+
+        <!-- SELECTOR DE FORMATOS Y PRECIOS -->
+        <div class="lg:col-span-6 space-y-8">
+          <div>
+            <div class="text-xs uppercase tracking-widest text-amber-400 font-bold mb-1">Obra Seleccionada</div>
+            <h3 id="print-title" class="text-3xl font-serif font-bold text-white">Megalopolis Suspendida</h3>
+            <p class="text-stone-400 text-xs mt-1">Edicion limitada a 50 reproducciones seriadas por formato</p>
+          </div>
+
+          <!-- SELECTOR DE TAMANO -->
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 font-semibold mb-3">1. Selecciona el Formato:</label>
+            <div class="grid grid-cols-3 gap-3">
+              <button onclick="setSize('A3')" id="btn-a3" class="size-btn p-3 rounded-xl border-2 border-amber-400 bg-stone-900 text-left transition-all">
+                <span class="block text-xs font-bold text-white">A3</span>
+                <span class="block text-[11px] text-stone-400">30 × 42 cm</span>
+              </button>
+              <button onclick="setSize('A2')" id="btn-a2" class="size-btn p-3 rounded-xl border border-stone-800 bg-stone-900 text-left hover:border-stone-600 transition-all">
+                <span class="block text-xs font-bold text-white">A2</span>
+                <span class="block text-[11px] text-stone-400">42 × 59 cm</span>
+              </button>
+              <button onclick="setSize('A1')" id="btn-a1" class="size-btn p-3 rounded-xl border border-stone-800 bg-stone-900 text-left hover:border-stone-600 transition-all">
+                <span class="block text-xs font-bold text-white">A1</span>
+                <span class="block text-[11px] text-stone-400">59 × 84 cm</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- OPCION DE MONTAJE / ENMARCADO -->
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 font-semibold mb-3">2. Presentacion de la Lamina:</label>
+            <div class="space-y-2">
+              <label class="flex items-center justify-between p-3.5 rounded-xl border border-amber-400/60 bg-stone-900/60 cursor-pointer">
+                <div class="flex items-center space-x-3">
+                  <input type="radio" name="framing" value="tube" checked onchange="setFraming(false)" class="text-amber-500 focus:ring-0">
+                  <span class="text-xs text-stone-200 font-medium">Lamina de Archivo en Tubo Rigido (Envio Incluido)</span>
+                </div>
+                <span class="text-xs font-bold text-stone-300">+0</span>
+              </label>
+              <label class="flex items-center justify-between p-3.5 rounded-xl border border-stone-800 bg-stone-900/40 cursor-pointer hover:border-stone-700">
+                <div class="flex items-center space-x-3">
+                  <input type="radio" name="framing" value="frame" onchange="setFraming(true)" class="text-amber-500 focus:ring-0">
+                  <span class="text-xs text-stone-200 font-medium">Enmarcado Galeria Roble Negro + Cristal de Museo</span>
+                </div>
+                <span class="text-xs font-bold text-amber-400" id="frame-extra-price">+90 USD</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- PRECIO FINAL Y BOTONES DE COMPRA -->
+          <div class="pt-6 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <span class="text-xs text-stone-400 uppercase tracking-wider block">Inversion Total</span>
+              <div class="text-4xl font-serif font-bold text-amber-300" id="total-price">$140 USD</div>
+              <span class="text-[10px] text-stone-500 uppercase tracking-widest">Incluye envio y seguro internacional</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <a id="btn-stripe" href="javascript:void(0)" onclick="simulateStripeCheckout()" class="px-6 py-3.5 rounded-xl bg-amber-400 text-stone-950 font-bold text-xs uppercase tracking-wider text-center hover:bg-amber-300 transition-colors shadow-lg">
+                Comprar Online
+              </a>
+              <a id="btn-whatsapp-print" href="#" target="_blank" class="px-6 py-3.5 rounded-xl border border-stone-700 text-stone-200 font-medium text-xs uppercase tracking-wider text-center hover:bg-stone-800 transition-colors">
+                Pedir por WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCION ESTUDIO DE ARQUITECTURA -->
+  <section id="arquitectura" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <span class="text-[11px] uppercase tracking-[0.3em] font-bold text-stone-500">Raiz Profesional</span>
+      <h2 class="text-4xl md:text-5xl font-serif text-stone-950 font-medium">Estudio de Arquitectura</h2>
+      <p class="text-stone-600 font-light text-sm md:text-base leading-relaxed">
+        Proyectos espaciales, diseno bioclimatico y direccion de obra en Peru y Europa. El rigor del oficio que da origen a la obra grafica.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl bg-white border border-stone-200">
+        <span class="text-amber-800 font-serif text-3xl font-bold">01</span>
+        <h3 class="font-serif text-2xl font-bold text-stone-900 mt-2">Geometria Habitacional</h3>
+        <p class="text-stone-600 text-xs font-light leading-relaxed mt-3">
+          Vivienda unifamiliar y espacios de escala intima concebidos desde la iluminacion cenital, el orden modular y el confort termico pasivo.
+        </p>
+      </div>
+      <div class="p-8 rounded-2xl bg-white border border-stone-200">
+        <span class="text-amber-800 font-serif text-3xl font-bold">02</span>
+        <h3 class="font-serif text-2xl font-bold text-stone-900 mt-2">Pabellones Culturales</h3>
+        <p class="text-stone-600 text-xs font-light leading-relaxed mt-3">
+          Estructuras temporales y galerias disenadas para dialogar con el paisaje y alojar eventos de artes plasticas con minima huella material.
+        </p>
+      </div>
+      <div class="p-8 rounded-2xl bg-white border border-stone-200">
+        <span class="text-amber-800 font-serif text-3xl font-bold">03</span>
+        <h3 class="font-serif text-2xl font-bold text-stone-900 mt-2">Consultoria Urbana</h3>
+        <p class="text-stone-600 text-xs font-light leading-relaxed mt-3">
+          Analisis morfologico y asesoramiento tecnico para planes maestros de regeneracion urbana y proyectos de conservacion patrimonial.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO / COLECCIONISTAS -->
+  <section id="contacto" class="py-24 bg-[#F4F3EE] border-t border-subtle">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center space-y-4 mb-12">
+        <span class="text-[11px] uppercase tracking-[0.3em] font-bold text-amber-900">Contacto Directo</span>
+        <h2 class="text-4xl font-serif text-stone-950 font-medium">Consultas para Coleccionistas & Museos</h2>
+        <p class="text-stone-600 font-light text-sm max-w-xl mx-auto">
+          Para solicitud de catalogo confidencial de originales, encargos especiales o colaboraciones institucionales en Lima y Berlin.
+        </p>
+      </div>
+
+      <form onsubmit="handleInquiry(event)" class="bg-white p-8 md:p-12 rounded-3xl border border-stone-200 shadow-sm space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-2">Nombre Completo</label>
+            <input type="text" required placeholder="Ej. Dr. Alberto Mendoza" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-stone-900 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-2">Correo Electronico</label>
+            <input type="email" required placeholder="alberto@coleccion.com" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-stone-900 outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-2">Perfil / Institucion</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-stone-900 outline-none bg-white">
+              <option>Coleccionista Particular</option>
+              <option>Galeria / Curaduria</option>
+              <option>Museo / Centro Cultural</option>
+              <option>Estudio de Arquitectura / Diseno</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-2">Interes Principal</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-stone-900 outline-none bg-white">
+              <option>Adquisicion de Obra Original</option>
+              <option>Serie de Giclee Prints</option>
+              <option>Exposicion / Proyectos Institucionales</option>
+              <option>Servicios de Arquitectura</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-2">Mensaje o Consulta Especifica</label>
+          <textarea rows="4" required placeholder="Indica detalles de la obra o proyecto..." class="w-full px-4 py-3 rounded-xl border border-stone-300 text-xs focus:ring-2 focus:ring-stone-900 outline-none"></textarea>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-2">
+          <p class="text-[11px] text-stone-500 font-light">
+            Respuesta confidencial en menos de 24 horas habiles.
+          </p>
+          <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-full bg-stone-950 text-white text-xs uppercase tracking-[0.2em] font-semibold hover:bg-stone-800 transition-all shadow-md">
+            Enviar Solicitud
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PAGINA INSTITUCIONAL -->
+  <footer class="bg-stone-950 text-stone-400 py-16 border-t border-stone-800 text-xs">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-3">
+        <span class="text-xl font-serif text-white font-bold tracking-tight block">IVAN MORATILLO</span>
+        <p class="text-stone-500 font-light">Arquitectura y Grafica Visionaria contemporanea entre Lima y Berlin.</p>
+        <p class="text-[10px] text-stone-600 uppercase tracking-widest pt-2">KusiAI Web Node · Nivel 5 Agent-Native</p>
+      </div>
+
+      <div class="space-y-2">
+        <span class="text-stone-200 font-bold uppercase tracking-wider block text-[11px]">Colecciones</span>
+        <ul class="space-y-1 font-light">
+          <li><a href="#originales" class="hover:text-white transition-colors">Ciudadelas y Megalopolis</a></li>
+          <li><a href="#originales" class="hover:text-white transition-colors">Mitologias y Quimeras</a></li>
+          <li><a href="#tienda-prints" class="hover:text-white transition-colors">Giclee Prints de Coleccion</a></li>
+          <li><a href="#arquitectura" class="hover:text-white transition-colors">Proyectos de Arquitectura</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <span class="text-stone-200 font-bold uppercase tracking-wider block text-[11px]">Sedes & Contacto</span>
+        <p class="font-light">Lima: Miraflores / Barranco, Peru</p>
+        <p class="font-light">Berlin: Mitte / Kreuzberg, Alemania</p>
+        <p class="font-light text-stone-300">WhatsApp: +51 962 326 081</p>
+      </div>
+
+      <div class="space-y-2">
+        <span class="text-stone-200 font-bold uppercase tracking-wider block text-[11px]">Certificacion & Envios</span>
+        <p class="font-light text-stone-500">Todas las laminas cuentan con certificacion de archivo BFK Rives / Hahnemuhle y tintas de pigmento puro.</p>
+        <div class="pt-2 text-[10px] text-stone-600">
+          © 2026 Ivan Moratillo. Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT REACTIVO LIVIANO PARA LA TIENDA DE PRINTS -->
+  <script>
+    let currentCurrency = 'USD';
+    let currentWorkName = 'Megalopolis Suspendida';
+    let currentSize = 'A3';
+    let hasFrame = false;
+
+    const basePrices = {
+      'USD': { 'A3': 140, 'A2': 220, 'A1': 340, 'frame': 90 },
+      'EUR': { 'A3': 130, 'A2': 200, 'A1': 310, 'frame': 85 }
+    };
+
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      document.getElementById('btn-usd').className = curr === 'USD' ? 'px-2.5 py-1 rounded-full bg-stone-900 text-white transition-all' : 'px-2.5 py-1 rounded-full text-stone-600 transition-all';
+      document.getElementById('btn-eur').className = curr === 'EUR' ? 'px-2.5 py-1 rounded-full bg-stone-900 text-white transition-all' : 'px-2.5 py-1 rounded-full text-stone-600 transition-all';
+      document.getElementById('frame-extra-price').innerText = `+${basePrices[curr].frame} ${curr}`;
+      updateStorePricing();
+    }
+
+    function selectPrintWork(id, name, imgPath) {
+      currentWorkName = name;
+      document.getElementById('print-title').innerText = name;
+      document.getElementById('print-preview-img').src = imgPath;
+      
+      const buttons = document.querySelectorAll('.thumb-btn');
+      buttons.forEach(b => b.className = 'thumb-btn border border-stone-700 hover:border-amber-400 rounded-lg p-1 bg-stone-900 flex-shrink-0');
+      if (event && event.currentTarget) {
+        event.currentTarget.className = 'thumb-btn border-2 border-amber-400 rounded-lg p-1 bg-stone-900 flex-shrink-0';
+      }
+      updateStorePricing();
+    }
+
+    function setSize(size) {
+      currentSize = size;
+      ['a3', 'a2', 'a1'].forEach(s => {
+        const el = document.getElementById(`btn-${s}`);
+        if (s === size.toLowerCase()) {
+          el.className = 'size-btn p-3 rounded-xl border-2 border-amber-400 bg-stone-900 text-left transition-all';
+        } else {
+          el.className = 'size-btn p-3 rounded-xl border border-stone-800 bg-stone-900 text-left hover:border-stone-600 transition-all';
+        }
+      });
+      updateStorePricing();
+    }
+
+    function setFraming(framed) {
+      hasFrame = framed;
+      updateStorePricing();
+    }
+
+    function updateStorePricing() {
+      const p = basePrices[currentCurrency];
+      let total = p[currentSize];
+      if (hasFrame) total += p.frame;
+
+      const symbol = currentCurrency === 'USD' ? '$' : '€';
+      document.getElementById('total-price').innerText = `${symbol}${total} ${currentCurrency}`;
+
+      // Actualizar enlace directo a WhatsApp
+      const frameText = hasFrame ? 'Con enmarcado de galeria' : 'Lamina suelta en tubo rigido';
+      const msg = encodeURIComponent(`Hola Ivan, deseo adquirir un Giclee Print de la obra "${currentWorkName}" en formato ${currentSize} (${frameText}) por valor de ${symbol}${total} ${currentCurrency}. ¿Como coordinamos el envio?`);
+      document.getElementById('btn-whatsapp-print').href = `https://wa.me/51962326081?text=${msg}`;
+    }
+
+    function simulateStripeCheckout() {
+      alert(`[Simulacion de Pasarela Stripe]\n\nObra: ${currentWorkName}\nFormato: ${currentSize}\nEnmarcado: ${hasFrame ? 'Si' : 'No'}\nTotal: ${document.getElementById('total-price').innerText}\n\nEn la version desplegada de Astro, este boton redirige al link directo de checkout bancario de Stripe con envio internacional asegurado.`);
+    }
+
+    function handleInquiry(e) {
+      e.preventDefault();
+      alert('Gracias por su interes. La solicitud confidencial ha sido recibida y sera atendida por Ivan Moratillo en breve.');
+      e.target.reset();
+    }
+
+    // Inicializar precios al cargar
+    updateStorePricing();
+  </script>
+
+</body>
+</html>
