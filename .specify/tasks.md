@@ -7,9 +7,9 @@
 - [x] Tarea 1.4: Conectar con repositorio remoto de GitHub (Completado: https://github.com/kusiai070/moratillo-web).
 
 ## Fase 2: Boceto Visual y Maqueta Interactiva (El Entregable Inicial)
-- [ ] Tarea 2.1: Disenar prototipo visual interactivo de la portada y tienda de prints (con `generative_ui` para revision con Julio).
-- [ ] Tarea 2.2: Redactar textos ficticios y de autor de alta conversion (Manifiesto de Ivan, concepto de las series, fichas tecnicas de giclee).
-- [ ] Tarea 2.3: Integrar selector de formatos interactivo (A3, A2, A1) con calculo dinamico de precio en USD/EUR y boton de WhatsApp.
+- [x] Tarea 2.1: Disenar prototipo visual interactivo de la portada y tienda de prints (Completado: boceto_interactivo.html).
+- [x] Tarea 2.2: Redactar textos ficticios y de autor de alta conversion (Manifiesto de Ivan, concepto de las series, fichas tecnicas de giclee).
+- [x] Tarea 2.3: Integrar selector de formatos interactivo (A3, A2, A1) con calculo dinamico de precio en USD/EUR y boton de WhatsApp.
 - [ ] Tarea 2.4: Validar y ajustar diseno con Julio para presentacion ante el cliente.
 
 ## Fase 3: Construccion del Nodo Astro 7 y Componentes
