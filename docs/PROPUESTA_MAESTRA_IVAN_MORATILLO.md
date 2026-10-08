@@ -161,6 +161,12 @@ Respaldando la relacion y recomendacion de Alvaro, la propuesta se formula en te
   - Monitoreo de posicionamiento organico (SEO) y visibilidad en inteligencia artificial (GEO).
   - Soporte tecnico directo y respaldo periodico de datos.
 
+### 3. Modulo Opcional Adicional: Curaduria y Gestion de Redes Sociales Bilingue
+* **Alcance:** Si Ivan desea delegar la difusion activa de su obra en redes sociales (Instagram, LinkedIn o Facebook):
+  - Creacion y redaccion de publicaciones bilingues (ingles y castellano) enfocadas en coleccionistas, curadores y galeristas.
+  - Sincronizacion directa con los lanzamientos de series, exposiciones y nuevas obras en la web.
+  - Este servicio es independiente y se cotiza como un modulo adicional a medida segun la frecuencia de publicaciones acordada.
+
 ---
 
 ## 9. CRONOGRAMA DE TRABAJO (PLAZO: 4 SEMANAS)
@@ -181,6 +187,7 @@ Para dar inicio al desarrollo, se requiere que Ivan nos facilite:
 2. **Textos y Contenidos:** Biografia oficial, manifiesto o declaracion de artista, y fichas tecnicas breves de cada obra (titulo, anho, tecnica, dimensiones).
 3. **Preferencia de Dominio:** Confirmar el nombre deseado para la direccion web (ej. `ivanmoratillo.com`).
 4. **Nombres para Correos Corporativos:** Definir los buzones requeridos (ej. `contacto@...`, `estudio@...`).
+5. **Perfiles de Redes Sociales:** Informarnos que cuentas tiene activas actualmente (Instagram, LinkedIn, Facebook) para enlazarlas de forma limpia en el portal desde el lanzamiento.
 
 ---
 **KusiAI Digital Architecture**  
